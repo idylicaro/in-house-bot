@@ -1,3 +1,5 @@
+const { EndOfLineState } = require("typescript");
+
 module.exports = {
 
     semi: true,
@@ -8,6 +10,10 @@ module.exports = {
   
     printWidth: 120,
   
-    tabWidth: 2
+    tabWidth: 2,
+
+    bracketSpacing: true,
+
+    endOfLine: "lf"
   
   };

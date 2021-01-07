@@ -1,0 +1,7 @@
+{
+    "activity": "",
+    "commands": [
+        "help"
+    ],
+    "token": "get by .env(file) .dotenv"
+}
