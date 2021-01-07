@@ -1,7 +1,8 @@
 import { DiscordAPIError } from 'discord.js';
 import { Client } from 'discord.js';
-import { IBotCommand, IBotConfig, IUser } from './index';
+import { IBotCommand, IBotConfig, IUser, ILogger } from './index';
 export interface IBot {
+  _logger: ILogger;
   _client: Client;
   _prefix: string;
   _commands: IBotCommand[];

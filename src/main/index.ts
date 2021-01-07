@@ -10,5 +10,6 @@ import { Bot } from '../controllers/bot';
 const cfg = require('./../../bot.json') as IBotConfig;
 cfg['token'] = process.env.BOT_TOKEN!;
 
-const bot = new Bot(cfg, `${__dirname}/../commands`, `${__dirname}/../data`);
+const bot = new Bot(cfg, `${__dirname}/../commands`, `${__dirname}/../data`, logger);
 bot.start();
+console.log(bot.getAllUsers('752953160464859156'));
